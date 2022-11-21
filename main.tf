@@ -33,7 +33,7 @@ data "aws_caller_identity" "current" {}
 ################################################################################
 
 module "eks" {
-  source = "../.."
+  source = "modules/eks"
 
   cluster_name                    = local.name
   cluster_version                 = local.cluster_version
